@@ -1,0 +1,5 @@
+SettingsProvider__classes.dex	direct 	Lcom/android/providers/settings/SettingsProvider;	getCallingPackageInfo	(I)Landroid/content/pm/PackageInfo;
+SettingsProvider__classes.dex	direct 	Lcom/android/providers/settings/SettingsProvider;	getCallingPackageInfoOrThrow	(I)Landroid/content/pm/PackageInfo;
+SettingsProvider__classes.dex	direct 	Lcom/android/providers/settings/SettingsProvider;	getSsaidSettingLocked	(Landroid/content/pm/PackageInfo;I)Lcom/android/providers/settings/SettingsState$Setting;
+SettingsProvider__classes.dex	direct 	Lcom/android/providers/settings/SettingsProvider;	packageValueForCallResult	(ILjava/lang/String;ILcom/android/providers/settings/SettingsState$Setting;Z)Landroid/os/Bundle;
+SettingsProvider__classes.dex	virtual	Lcom/android/providers/settings/SettingsProvider;	call	(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;

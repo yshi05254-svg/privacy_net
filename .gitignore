@@ -1,0 +1,27 @@
+# build outputs
+build/
+*/build/
+.gradle/
+.kotlin/
+.cxx/
+*.apk
+*.aab
+tools/**/*.dex
+local.properties
+
+# signing material
+keys/
+signing/
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# device-specific data
+runs/
+.zcode/
+
+# vendor firmware binaries (proprietary, not redistributed)
+tools/audit/*/extracted/
+tools/audit/*/*.jar
+tools/audit/*/queries-baseline.txt

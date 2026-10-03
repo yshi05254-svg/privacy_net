@@ -1,0 +1,1 @@
+framework__classes.dex	direct 	Landroid/content/pm/PackageManager;	invalidatePackageInfoCache	()V

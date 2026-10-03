@@ -1,0 +1,29 @@
+### SettingsProvider__classes.dex Lcom/android/providers/settings/SettingsProvider; -> getCallingPackageInfo(I)Landroid/content/pm/PackageInfo;
+1d307c: 5430 1431                              |0000: iget-object v0, v3, Lcom/android/providers/settings/SettingsProvider;.mCallArgs:Landroid/os/Bundle; // field@3114
+1d3080: 6e10 6b05 0300                         |0002: invoke-virtual {v3}, Landroid/content/ContentProvider;.getCallingPackage:()Ljava/lang/String; // method@056b
+1d3086: 0c01                                   |0005: move-result-object v1
+1d3088: 7120 2c48 1000                         |0006: invoke-static {v0, v1}, Lcom/android/providers/settings/oplus/OplusSettingsUtils;.getCallingPackage:(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String; // method@482c
+1d308e: 0c00                                   |0009: move-result-object v0
+1d3090: 5433 1931                              |000a: iget-object v3, v3, Lcom/android/providers/settings/SettingsProvider;.mPackageManager:Landroid/content/pm/IPackageManager; // field@3119
+1d3094: 1601 4000                              |000c: const-wide/16 v1, #int 64 // #40
+1d3098: 7254 2206 0321                         |000e: invoke-interface {v3, v0, v1, v2, v4}, Landroid/content/pm/IPackageManager;.getPackageInfo:(Ljava/lang/String;JI)Landroid/content/pm/PackageInfo; // method@0622
+1d309e: 0c03                                   |0011: move-result-object v3
+1d30a0: 1103                                   |0012: return-object v3
+1d30a2: 2203 250d                              |0013: new-instance v3, Ljava/lang/IllegalStateException; // type@0d25
+1d30a6: 2204 3f0d                              |0015: new-instance v4, Ljava/lang/StringBuilder; // type@0d3f
+1d30aa: 7010 0389 0400                         |0017: invoke-direct {v4}, Ljava/lang/StringBuilder;.<init>:()V // method@8903
+1d30b0: 1a01 a92f                              |001a: const-string v1, "Package " // string@2fa9
+1d30b4: 6e20 0f89 1400                         |001c: invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@890f
+1d30ba: 6e20 0f89 0400                         |001f: invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@890f
+1d30c0: 1a00 d800                              |0022: const-string v0, " doesn't exist" // string@00d8
+1d30c4: 6e20 0f89 0400                         |0024: invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@890f
+1d30ca: 6e10 2289 0400                         |0027: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8922
+1d30d0: 0c04                                   |002a: move-result-object v4
+1d30d2: 7020 3788 4300                         |002b: invoke-direct {v3, v4}, Ljava/lang/IllegalStateException;.<init>:(Ljava/lang/String;)V // method@8837
+1d30d8: 2703                                   |002e: throw v3
+        0x000a - 0x0012
+        0x0000 line=1789
+        0x000a line=1792
+        0x0013 line=1795
+        0x0000 - 0x002f reg=3 this Lcom/android/providers/settings/SettingsProvider;
+        0x0000 - 0x002f reg=4 (null) I

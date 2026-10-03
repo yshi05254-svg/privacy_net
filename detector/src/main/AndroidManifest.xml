@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 无 INTERNET 权限；结果走 logcat(PGDetect) 与 getExternalFilesDir 报告文件（阶段 2 实现） -->
+    <application
+        android:name=".DetectorApp"
+        android:label="PGDetector"
+        android:allowBackup="false">
+
+        <activity
+            android:name=".Main"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 无 INTERNET 权限：模块不做任何网络访问（PLAN §2） -->
+    <application
+        android:label="PrivacyGate"
+        android:allowBackup="false">
+
+        <meta-data
+            android:name="xposeddescription"
+            android:value="应用列表防泄露与 Android ID 每日轮换" />
+    </application>
+
+</manifest>

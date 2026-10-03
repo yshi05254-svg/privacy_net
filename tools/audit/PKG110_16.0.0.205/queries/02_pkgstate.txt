@@ -1,0 +1,4 @@
+services__classes3.dex	virtual	Lcom/android/server/pm/pkg/PackageState;	getAppId	()I
+services__classes3.dex	virtual	Lcom/android/server/pm/pkg/PackageState;	getPackageName	()Ljava/lang/String;
+services__classes3.dex	virtual	Lcom/android/server/pm/pkg/PackageState;	isSystem	()Z
+services__classes3.dex	virtual	Lcom/android/server/pm/pkg/PackageState;	isSystemExt	()Z

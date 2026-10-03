@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "list_filter_enabled": false,
+  "ssaid_rotation_enabled": false,
+  "switch_hour": 12,
+  "list_exempt": ["com.heytap.market", "com.android.vending", "io.github.privacygate", "io.github.lsposed.disableflagsecure", "com.sohu.inputmethod.sogou"],
+  "id_exempt": [],
+  "visible_targets": ["mark.via"],
+  "system_caller_deny": ["com.opos.ads"],
+  "eco_whitelist_enabled": false,
+  "eco_whitelist": ["com.tencent.mm", "com.tencent.mobileqq", "com.eg.android.AlipayGphone"],
+  "debug_bucket_offset": 0
+}
